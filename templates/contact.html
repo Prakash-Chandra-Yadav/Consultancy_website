@@ -1,0 +1,344 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contact Us | SHREESHAKTI</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .structural-layer {
+            box-shadow: 4px 4px 0px 0px #000000;
+        }
+        .diagonal-hatch {
+            background-image: repeating-linear-gradient(45deg, #f5f3f3 0px, #f5f3f3 10px, #e4e2e2 10px, #e4e2e2 11px);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#303031",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed-variant": "#544600",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#fdd400",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface-variant": "#4c4546",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#221b00",
+                        "secondary-fixed-dim": "#e9c400",
+                        "surface-container-high": "#e9e8e7",
+                        "on-secondary-container": "#6f5c00",
+                        "surface-container-low": "#f5f3f3",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#5e5e5e",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffe170",
+                        "surface-container": "#efeded",
+                        "tertiary-container": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary-container": "#1b1b1b",
+                        "on-background": "#1b1c1c",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-surface": "#1b1c1c",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary-container": "#848484",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary": "#ffffff",
+                        "outline": "#7e7576",
+                        "inverse-on-surface": "#f2f0f0",
+                        "secondary": "#705d00",
+                        "outline-variant": "#cfc4c5",
+                        "on-tertiary-container": "#838484",
+                        "surface": "#fbf9f8",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "label-bold": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "label-md": ["14px", {"lineHeight": "1", "fontWeight": "500"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "label-bold": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-background w-full top-0 sticky z-50 border-b-2 border-primary">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">
+                SHREESHAKTI
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Home</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">About</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Projects</a>
+<a class="font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1 transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-6 py-3 border-2 border-primary hover:bg-primary hover:text-on-primary transition-all duration-200 uppercase structural-layer">
+                Get a Quote
+            </button>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="flex flex-col md:flex-row gap-gutter items-end">
+<div class="flex-1">
+<span class="font-label-bold text-label-bold text-secondary uppercase tracking-widest block mb-4">Connect With Us</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary uppercase">Build Your <br><span class="text-outline">Infrastructure</span></h1>
+</div>
+<div class="flex-none md:w-1/3 pb-4">
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        We balance technical rigor with modern innovation to deliver civil engineering solutions that stand the test of time. Reach out to our specialized team today.
+                    </p>
+</div>
+</div>
+<div class="h-2 w-full bg-primary mt-12 diagonal-hatch"></div>
+</section>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Form Section -->
+<div class="lg:col-span-7 bg-white border-2 border-primary p-8 md:p-12 structural-layer relative overflow-hidden">
+<!-- Industrial aesthetic accent -->
+<div class="absolute top-0 right-0 w-24 h-24 diagonal-hatch opacity-50 border-l border-b border-primary pointer-events-none"></div>
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase mb-8">Inquiry Form</h2>
+<form class="space-y-6" id="contactForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-primary uppercase" for="name">Full Name</label>
+<input class="w-full bg-white border border-primary p-4 focus:ring-0 focus:border-2 focus:border-primary transition-all outline-none font-body-md text-body-md" id="name" name="name" placeholder="John Doe" required="" type="text">
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-primary uppercase" for="email">Email Address</label>
+<input class="w-full bg-white border border-primary p-4 focus:ring-0 focus:border-2 focus:border-primary transition-all outline-none font-body-md text-body-md" id="email" name="email" placeholder="john@example.com" required="" type="email">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-primary uppercase" for="subject">Project Subject</label>
+<select class="w-full bg-white border border-primary p-4 focus:ring-0 focus:border-2 focus:border-primary transition-all outline-none font-body-md text-body-md appearance-none" id="subject" name="subject" required="">
+<option value="">Select a service</option>
+<option value="civil">Structural Engineering</option>
+<option value="urban">Urban Planning</option>
+<option value="infra">Bridge &amp; Dam Infrastructure</option>
+<option value="other">General Consultation</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-primary uppercase" for="message">Message</label>
+<textarea class="w-full bg-white border border-primary p-4 focus:ring-0 focus:border-2 focus:border-primary transition-all outline-none font-body-md text-body-md resize-none" id="message" name="message" placeholder="Describe your project requirements in detail..." required="" rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto bg-[#FFD600] text-primary font-label-bold text-label-bold px-12 py-5 uppercase tracking-widest hover:brightness-105 active:scale-[0.98] transition-all border-b-4 border-r-4 border-black" type="submit">
+                        Submit Inquiry
+                    </button>
+</form>
+</div>
+<!-- Contact Info & Map Section -->
+<div class="lg:col-span-5 space-y-12">
+<!-- Office Details -->
+<div class="space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="bg-primary text-on-primary p-4 flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary uppercase mb-1">Central Headquarters</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">452 Industrial Corridor, Suite 800<br>Structural Plaza, Civil Lines<br>Mumbai, MH 400001</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="bg-primary text-on-primary p-4 flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">call</span>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary uppercase mb-1">Direct Lines</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">+91 (22) 555-0198<br>+91 (22) 555-0199</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="bg-primary text-on-primary p-4 flex items-center justify-center transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-primary uppercase mb-1">Communication</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">projects@shreeshakti.com<br>info@shreeshakti.com</p>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="border-2 border-primary p-2 bg-surface-container-low group cursor-crosshair">
+<div class="relative h-[350px] w-full overflow-hidden border border-primary">
+<div class="w-full h-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="A top-down architectural site map of an industrial complex in Mumbai. The visual style is a mix of a modern digital map and a technical engineering blueprint, with high contrast black and white lines, subtle yellow highlights on building perimeters, and clean sans-serif typography. The mood is professional, precise, and authoritative." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADKRXr3Hj_XCdp0zfqPhlgQdQZpGpS4sOEy10k20OTlSpWwQfPBsoMB_ugy9dkmdtvbRgwh_w61-eS_S-UbrS1SZhnGi0fge3DjtWrR18dRETTUPL8nq0vjD_QLYpdqdelRfT-wk3TtMOeN-uM7bAZqN33Df3TJoryxguiSAI2KD9uF_l6YEr-i7VAk8AFKGZNNXU8yvpvEbwSDD2r6duAK2si0KAGA5d1OMo3B5c4ZiRLXyQTz90I_g')"></div>
+<!-- Map HUD overlay -->
+<div class="absolute inset-0 pointer-events-none border-[12px] border-white/20"></div>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 font-label-bold text-label-md uppercase">Coordinates: 19.0760° N, 72.8777° E</div>
+<!-- Map Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-8 h-8 bg-[#FFD600] border-2 border-black rotate-45 flex items-center justify-center">
+<div class="w-2 h-2 bg-black -rotate-45"></div>
+</div>
+<div class="mt-2 bg-black text-white px-3 py-1 font-label-bold text-[10px] uppercase">SHREESHAKTI HQ</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Accreditation Bar -->
+<section class="bg-primary py-12 mt-20">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-60 grayscale brightness-200 contrast-150">
+<div class="flex items-center justify-center h-16 border border-white/20">
+<span class="font-display-lg text-headline-md italic uppercase">ISO 9001</span>
+</div>
+<div class="flex items-center justify-center h-16 border border-white/20">
+<span class="font-display-lg text-headline-md italic uppercase">Civil Board</span>
+</div>
+<div class="flex items-center justify-center h-16 border border-white/20">
+<span class="font-display-lg text-headline-md italic uppercase">Green Build</span>
+</div>
+<div class="flex items-center justify-center h-16 border border-white/20">
+<span class="font-display-lg text-headline-md italic uppercase">Structural</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-tertiary-container w-full border-t-4 border-secondary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto">
+<!-- Brand & Info -->
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-on-tertiary font-bold mb-6">SHREESHAKTI</div>
+<p class="text-on-tertiary-fixed-variant mb-6">Elite civil engineering solutions for modern infrastructure. Precision, safety, and innovation integrated into every project.</p>
+<div class="flex gap-4">
+<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="md:col-span-1">
+<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Navigation</h5>
+<ul class="space-y-4">
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Home</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Services</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Sustainability</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Legal -->
+<div class="md:col-span-1">
+<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Resources</h5>
+<ul class="space-y-4">
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Terms of Service</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Documentation</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Project Portal</a></li>
+</ul>
+</div>
+<!-- Contact/Newsletter -->
+<div class="md:col-span-1">
+<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Contact Info</h5>
+<p class="text-on-tertiary-fixed-variant mb-2">Corporate Office:</p>
+<p class="text-on-tertiary mb-6">402 Engineer Heights, Tech District, City Hub - 102</p>
+<button class="w-full bg-secondary text-on-secondary font-label-bold text-label-bold py-3 uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+                    Work With Us
+                </button>
+</div>
+</div>
+<div class="border-t border-on-tertiary-fixed-variant/20 py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-on-tertiary-fixed-variant text-sm font-body-md">© 2024 Shreeshakti Civil Engineering Consultancy. All rights reserved.</span>
+<div class="flex gap-8">
+<span class="text-on-tertiary-fixed-variant text-xs uppercase tracking-tighter">Precision Built</span>
+<span class="text-on-tertiary-fixed-variant text-xs uppercase tracking-tighter">ISO 9001 Certified</span>
+</div>
+</div>
+</footer>
+<script>
+        // Simple form interaction
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerText;
+            
+            btn.innerText = 'Transmitting...';
+            btn.classList.add('opacity-80');
+            
+            setTimeout(() => {
+                btn.innerText = 'Inquiry Sent';
+                btn.style.backgroundColor = '#4CAF50';
+                btn.style.color = '#FFFFFF';
+                e.target.reset();
+                
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                    btn.classList.remove('opacity-80');
+                }, 3000);
+            }, 1500);
+        });
+
+        // Add visual flair to header scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-xl');
+            } else {
+                header.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+
+
+</body></html>
