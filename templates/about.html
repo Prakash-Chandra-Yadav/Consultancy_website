@@ -233,7 +233,8 @@
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
-<!-- Person 1 -->
+<!-- Persons-->
+{% for employee in professionals %}
 <div class="group">
 <div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
 <div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a senior male civil engineer in his 50s, wearing a crisp white shirt and a yellow hard hat. He is standing against a blurred background of a construction site with cranes and scaffolding. The portrait is sharp and authoritative, emphasizing years of industry leadership and technical expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9o53OkppBbH6AMH7YgMMYBrvOUkTZPrF5wlqY3AX8g5ELTtsZEXPYRtP-BpyjYrB1M1Djz41gdK2qhV0OHmCE4fxh50kv0JMxCaSovb75XPZuVkpfUedUOUnRyINO-m3PgnH9zfcTC7-WyWJ2p0CWGxTUOWdia3xoIGtu1WrKl6WWwldwCV9N6MYEGcgfHjbP9cuubcxlSIOp13cdM5CSL96Ufb3uTvmZvaz201-eS-SEZzEIvtiqjg')"></div>
@@ -241,9 +242,25 @@
 <p class="text-label-md">25 Years Experience</p>
 </div>
 </div>
-<h4 class="font-headline-md text-headline-md">Vikram Shah</h4>
-<p class="text-on-surface-variant font-label-bold uppercase">Principal Consultant</p>
+<h4 class="font-headline-md text-headline-md">{{ employee.name|title }}</h4>
+<p class="text-on-surface-variant font-label-bold uppercase">{{ employee.position|title }}</p>
 </div>
+{% endfor %}
+
+<!---test code-->
+<!-- Persons-->
+{% for employee in professionals %}
+<div class="group">
+<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
+<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a senior male civil engineer in his 50s, wearing a crisp white shirt and a yellow hard hat. He is standing against a blurred background of a construction site with cranes and scaffolding. The portrait is sharp and authoritative, emphasizing years of industry leadership and technical expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9o53OkppBbH6AMH7YgMMYBrvOUkTZPrF5wlqY3AX8g5ELTtsZEXPYRtP-BpyjYrB1M1Djz41gdK2qhV0OHmCE4fxh50kv0JMxCaSovb75XPZuVkpfUedUOUnRyINO-m3PgnH9zfcTC7-WyWJ2p0CWGxTUOWdia3xoIGtu1WrKl6WWwldwCV9N6MYEGcgfHjbP9cuubcxlSIOp13cdM5CSL96Ufb3uTvmZvaz201-eS-SEZzEIvtiqjg')"></div>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
+<p class="text-label-md">25 Years Experience</p>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md">{{ employee.name|title }}</h4>
+<p class="text-on-surface-variant font-label-bold uppercase">{{ employee.position|title }}</p>
+</div>
+{% endfor %}
 <!-- Person 2 -->
 <div class="group">
 <div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
