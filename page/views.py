@@ -7,3 +7,9 @@ from .models import Contact, Professionals, Post
 def contactview(request):
     contacts = Contact.objects.all()
     return render(request, "contact.html", {"contacts": contacts})
+
+
+# this retuens the view of the contact us page and the professionals database objects
+def aboutView(request):
+    professionals = Professionals.objects.all()
+    return render(request, "about.html", {"professionals": professionals})

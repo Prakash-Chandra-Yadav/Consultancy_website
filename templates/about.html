@@ -1,0 +1,383 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>About Us | SHREESHAKTI Civil Engineering Consultancy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#303031",
+                        "tertiary": "#000000",
+                        "on-secondary-fixed-variant": "#544600",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#fdd400",
+                        "surface-variant": "#e4e2e2",
+                        "on-surface-variant": "#4c4546",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#221b00",
+                        "secondary-fixed-dim": "#e9c400",
+                        "surface-container-high": "#e9e8e7",
+                        "on-secondary-container": "#6f5c00",
+                        "surface-container-low": "#f5f3f3",
+                        "background": "#fbf9f8",
+                        "surface-tint": "#5e5e5e",
+                        "on-primary-fixed-variant": "#474747",
+                        "on-error": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#ffe170",
+                        "surface-container": "#efeded",
+                        "tertiary-container": "#1a1c1c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fbf9f8",
+                        "on-primary-fixed": "#1b1b1b",
+                        "primary-container": "#1b1b1b",
+                        "on-background": "#1b1c1c",
+                        "primary": "#000000",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#c6c6c6",
+                        "surface-container-highest": "#e4e2e2",
+                        "on-surface": "#1b1c1c",
+                        "primary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-primary-container": "#848484",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-primary": "#ffffff",
+                        "outline": "#7e7576",
+                        "inverse-on-surface": "#f2f0f0",
+                        "secondary": "#705d00",
+                        "outline-variant": "#cfc4c5",
+                        "on-tertiary-container": "#838484",
+                        "surface": "#fbf9f8",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#c6c6c6",
+                        "on-secondary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "label-bold": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-bold": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .structural-grid {
+            background-image: radial-gradient(circle, #cfc4c5 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px 0px #000000;
+        }
+        .hard-shadow-yellow {
+            box-shadow: 4px 4px 0px 0px #fdd400;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="bg-background w-full top-0 sticky z-50 border-b-2 border-primary">
+<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">
+                SHREESHAKTI
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1 transition-colors duration-200" href="#">Home</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">About</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Projects</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-6 py-3 border-2 border-primary hover:bg-primary hover:text-on-primary transition-all duration-200 uppercase structural-layer">
+                Get a Quote
+            </button>
+</nav>
+</header>
+<main class="pt-24 overflow-x-hidden">
+<!-- Hero Section -->
+<section class="relative bg-primary py-24 md:py-32 overflow-hidden transition-all duration-1000 opacity-100">
+<div class="absolute inset-0 opacity-20 structural-grid"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<h1 class="font-display-lg text-display-lg text-on-primary mb-8">ARCHITECTING THE FUTURE OF INFRASTRUCTURE</h1>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl border-l-4 border-secondary-container pl-6">
+                        Shreeshakti Civil Engineering Consultancy combines structural precision with modern innovative design to deliver large-scale urban solutions.
+                    </p>
+</div>
+</div>
+<div class="absolute right-0 bottom-0 w-1/3 h-full hidden lg:block border-l-8 border-secondary-container">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-contrast, black and white architectural photograph of a modern bridge under construction. The image features sharp geometric lines, structural steel beams, and a clear sky, emphasizing strength and precision. Lighting is dramatic, casting deep shadows that highlight the industrial texture of the concrete and metal, fitting the robust engineering brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAFXl95d1QZ02fRBJrk7Z5EcJfBXpeG7jWhdejkKntI1Iou9Vw4Mc74cNvMebtLr_IbLKOENJJTznr2iwt3MuPTcFJJ9Fmfe1DV9K74kvbJv2XUz4VqerVNZk7eYtbNypAYzPE6prYYj62hhRE01KPuR4TEaAJiFJ27AWQT1rdiFO1DhIqiQBSsmBkXIVBBVPZOQfZlkeVfScbO7kFWXMitzlxsVHBnvvOpTmo36JMLz3bPEnb-J-u7gQ')"></div>
+</div>
+</section>
+<!-- Mission & Vision: Bento Grid -->
+<section class="py-20 md:py-32 bg-surface transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Our Mission -->
+<div class="md:col-span-7 bg-white border-2 border-primary p-12 hard-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="w-12 h-2 bg-secondary-container"></span>
+<h2 class="font-headline-xl text-headline-xl">OUR MISSION</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+                                To provide unparalleled structural engineering and project management expertise, ensuring that every foundation we design serves as a testament to reliability and technical brilliance. We strive to empower urban development through sustainable, cost-effective, and robust civil solutions.
+                            </p>
+</div>
+<div class="h-64 w-full bg-cover bg-center border border-outline" data-alt="Detailed technical engineering blueprints and architectural floor plans laid out on a large wooden desk. A professional set of drafting tools, including a compass and a steel ruler, are placed strategically on the documents. The lighting is crisp and bright, conveying a sense of meticulous planning and professional authority in civil engineering." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVGSTPsxnsHopMhg-RHI1TXxIG8E3xorSOE_xG2WU9nu2uBnkNo0FL2xnG6xAROzaT-o5Gy6M9U_kUUEOQD4W8P8HEkLU1YbU-QiOSO-XR9MyNi_0ZoPb_jcOe9Y5QK0datR2OR4ctWnLvR3OIRGVdGfyA1JKMpLqQnFsbxVPJ6BuaG7bUpFktIzSsViYfLtOGd-c60b4oE_Zi3Q_X2qL43t2AbXcrRP4NZp1yyChXOazLP_URemubkw')"></div>
+</div>
+<!-- Our Vision -->
+<div class="md:col-span-5 bg-secondary-container border-2 border-primary p-12 hard-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="w-12 h-2 bg-primary"></span>
+<h2 class="font-headline-xl text-headline-xl">OUR VISION</h2>
+</div>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mb-12">
+                                To be the global benchmark for civil engineering excellence, recognized for transforming complex architectural dreams into enduring physical realities through innovative technology and uncompromising safety standards.
+                            </p>
+</div>
+<div class="bg-primary p-8 text-on-primary">
+<span class="material-symbols-outlined text-5xl mb-4" style="font-variation-settings: 'FILL' 1;">architecture</span>
+<p class="font-label-bold text-label-bold uppercase tracking-widest">Building Legacies Since 2004</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-20 md:py-32 bg-primary-container text-on-primary transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-20 text-center">
+<h2 class="font-headline-xl text-headline-xl mb-4">WHY CHOOSE US</h2>
+<div class="w-24 h-1 bg-secondary-container mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="bg-primary border border-outline p-10 group hover:border-secondary-container transition-colors duration-300">
+<div class="text-secondary-container mb-6 flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl">engineering</span>
+<span class="text-6xl font-bold opacity-10">01</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary-container transition-colors">Technical Rigor</h3>
+<p class="font-body-md text-on-primary-container">Our calculations are backed by decades of collective experience and the latest structural analysis software.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-primary border border-outline p-10 group hover:border-secondary-container transition-colors duration-300">
+<div class="text-secondary-container mb-6 flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl">precision_manufacturing</span>
+<span class="text-6xl font-bold opacity-10">02</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary-container transition-colors">Precise Execution</h3>
+<p class="font-body-md text-on-primary-container">We bridge the gap between design and reality with military precision in project management and site oversight.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-primary border border-outline p-10 group hover:border-secondary-container transition-colors duration-300">
+<div class="text-secondary-container mb-6 flex items-center justify-between">
+<span class="material-symbols-outlined text-4xl">verified</span>
+<span class="text-6xl font-bold opacity-10">03</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4 group-hover:text-secondary-container transition-colors">Zero-Failure Policy</h3>
+<p class="font-body-md text-on-primary-container">Safety is not an option; it's our core identity. We implement rigorous QA/QC protocols at every stage.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Personnel / Team Section -->
+<section class="py-20 md:py-32 transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline-xl text-headline-xl">THE LEADERSHIP</h2>
+<p class="text-secondary font-label-bold uppercase tracking-tighter mt-2">Expert Minds Behind the Structure</p>
+</div>
+<div class="bg-secondary-container px-6 py-2 border-l-8 border-primary">
+<p class="font-label-bold">200+ Projects Completed Successfully</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Person 1 -->
+<div class="group">
+<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
+<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a senior male civil engineer in his 50s, wearing a crisp white shirt and a yellow hard hat. He is standing against a blurred background of a construction site with cranes and scaffolding. The portrait is sharp and authoritative, emphasizing years of industry leadership and technical expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9o53OkppBbH6AMH7YgMMYBrvOUkTZPrF5wlqY3AX8g5ELTtsZEXPYRtP-BpyjYrB1M1Djz41gdK2qhV0OHmCE4fxh50kv0JMxCaSovb75XPZuVkpfUedUOUnRyINO-m3PgnH9zfcTC7-WyWJ2p0CWGxTUOWdia3xoIGtu1WrKl6WWwldwCV9N6MYEGcgfHjbP9cuubcxlSIOp13cdM5CSL96Ufb3uTvmZvaz201-eS-SEZzEIvtiqjg')"></div>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
+<p class="text-label-md">25 Years Experience</p>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md">Vikram Shah</h4>
+<p class="text-on-surface-variant font-label-bold uppercase">Principal Consultant</p>
+</div>
+<!-- Person 2 -->
+<div class="group">
+<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
+<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a confident female structural engineer in her late 30s, looking professional in a black blazer. She is holding a digital tablet with engineering software visible. The background is a modern architectural office with large windows and industrial decor. The aesthetic is clean, high-contrast, and focused on modern engineering innovation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBW4HUcjHPjvZ2q6D1ci_HIdDH76VeJ0tnqQbIW72fCM02h_7NFyb5JxopFH7kAQIp7MSOQ2alVLtief7Gmncw9RN7nzi3EUwS7uJ5Ch7Bk3t2u7hZ1AMHliE36Vo4kfbTw8SnYFZGJO7doKv9NepQ2ZsWLRrz7PRCQQ-NCMGdI0IROsCHgQIHScvyvO0GuAEEfh-R9o5upmFFXTRpLerNcwW56bzk-t8Z598ZklCrZm4acdIYJJcDOsg')"></div>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
+<p class="text-label-md">M.Tech Structural Engineering</p>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md">Ananya Reddy</h4>
+<p class="text-on-surface-variant font-label-bold uppercase">Head of Design</p>
+</div>
+<!-- Person 3 -->
+<div class="group">
+<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
+<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A sharp, professional headshot of a male project manager in his early 40s. He is wearing a high-visibility vest over a casual shirt and is smiling confidently. The background shows a large-scale infrastructure project with steel frameworks under a bright, high-key sun. The style is industrial, clean, and highly professional." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAw1bRTuM4rkedKSnelyK7mp4r3nrHuffl8vpqWqAPiMf4PItjF_BXSOLuVctbGZmiTaR7wjNOBME9_a1ZYwmey5rDmomKx7l7inKAqBUdSNOI_RXZQEg9a62c1MlVBC_ACNF0IWroiW4Tr7KG8-QL1vzpBeyga37IeOalTJ26ivZl5l-XCuArGCOQIgxINaA0SccKmGqyH1CCO_oCsdCYf0aKHrETRvf-GyDdgf_fpyPv8G9-HaXOUqw')"></div>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
+<p class="text-label-md">Project Management Lead</p>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md">Sanjay Mehta</h4>
+<p class="text-on-surface-variant font-label-bold uppercase">Operations Director</p>
+</div>
+<!-- Person 4 -->
+<div class="group">
+<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
+<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a young, enthusiastic male junior civil engineer in his late 20s, standing in a brightly lit engineering lab with structural testing equipment. He is looking into the camera with a friendly but professional demeanor. The image highlights the consultancy's investment in emerging talent and technological advancement." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5-TYoyNAyEsnrI7W9ge57rspxXItZ4AvmxCogT7vLi09bZ5FeXWaE3QN6LdIqjhCNrHXM92zJOZjDslrGJ6UnESYC26EbrUI7r9GGZWYPf3N7DtK2wwyjCUe1IAjSE0Q3G391zeUPYzVfbg_bByMrYU3pq5itPbAqEuoXl1wV1fDEvrucVcKpr5TvWd_2z_YWnvyxZjuXF7D6LX8DK41ZRxEVOIs9JH3c4qVtqnjodwIW7s2ty2iU3Q')"></div>
+<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
+<p class="text-label-md">Sustainable Design Expert</p>
+</div>
+</div>
+<h4 class="font-headline-md text-headline-md">Rahul Kapoor</h4>
+<p class="text-on-surface-variant font-label-bold uppercase">Senior Associate</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-secondary-container transition-all duration-1000 opacity-100">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-display-lg text-display-lg mb-8">READY TO START YOUR NEXT BIG PROJECT?</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+<button class="bg-primary text-on-primary font-label-bold px-12 py-5 uppercase text-lg hover:scale-105 transition-transform active:scale-95 hard-shadow">
+                        Partner With Us
+                    </button>
+<button class="bg-transparent border-2 border-primary text-primary font-label-bold px-12 py-5 uppercase text-lg hover:bg-primary hover:text-on-primary transition-all">
+                        View Portfolio
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-tertiary-container w-full border-t-4 border-secondary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto">
+<!-- Brand & Info -->
+<div class="md:col-span-1">
+<div class="font-headline-md text-headline-md text-on-tertiary font-bold mb-6">SHREESHAKTI</div>
+<p class="text-on-tertiary-fixed-variant mb-6">Elite civil engineering solutions for modern infrastructure. Precision, safety, and innovation integrated into every project.</p>
+<div class="flex gap-4">
+<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<!-- Quick Links -->
+<div class="md:col-span-1">
+<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Navigation</h5>
+<ul class="space-y-4">
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Home</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Services</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Sustainability</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<!-- Legal -->
+<div class="md:col-span-1">
+<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Resources</h5>
+<ul class="space-y-4">
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Terms of Service</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Documentation</a></li>
+<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Project Portal</a></li>
+</ul>
+</div>
+<!-- Contact/Newsletter -->
+<div class="md:col-span-1">
+<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Contact Info</h5>
+<p class="text-on-tertiary-fixed-variant mb-2">Corporate Office:</p>
+<p class="text-on-tertiary mb-6">402 Engineer Heights, Tech District, City Hub - 102</p>
+<button class="w-full bg-secondary text-on-secondary font-label-bold text-label-bold py-3 uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-all">
+                    Work With Us
+                </button>
+</div>
+</div>
+<div class="border-t border-on-tertiary-fixed-variant/20 py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<span class="text-on-tertiary-fixed-variant text-sm font-body-md">© 2024 Shreeshakti Civil Engineering Consultancy. All rights reserved.</span>
+<div class="flex gap-8">
+<span class="text-on-tertiary-fixed-variant text-xs uppercase tracking-tighter">Precision Built</span>
+<span class="text-on-tertiary-fixed-variant text-xs uppercase tracking-tighter">ISO 9001 Certified</span>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for hard shadows
+        document.querySelectorAll('.hard-shadow').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translate(-2px, -2px)';
+                card.style.boxShadow = '6px 6px 0px 0px #000000';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translate(0px, 0px)';
+                card.style.boxShadow = '4px 4px 0px 0px #000000';
+            });
+        });
+
+        // Simple scroll reveal
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+
+
+</body></html>

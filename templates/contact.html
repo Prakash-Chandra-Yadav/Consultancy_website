@@ -118,7 +118,7 @@
 <nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
 <div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">
                 SHREESHAKTI
-            </div>
+</div>
 <div class="hidden md:flex items-center gap-8">
 <a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Home</a>
 <a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">About</a>
@@ -193,7 +193,9 @@
 </div>
 <div>
 <h3 class="font-label-bold text-label-bold text-primary uppercase mb-1">Central Headquarters</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">452 Industrial Corridor, Suite 800<br>Structural Plaza, Civil Lines<br>Mumbai, MH 400001</p>
+{% for contact in contacts %}
+<p class="font-body-md text-body-md text-on-surface-variant">{{ contact.location }}</p>
+{% endfor %}
 </div>
 </div>
 <div class="flex items-start gap-6 group">
@@ -202,7 +204,9 @@
 </div>
 <div>
 <h3 class="font-label-bold text-label-bold text-primary uppercase mb-1">Direct Lines</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">+91 (22) 555-0198<br>+91 (22) 555-0199</p>
+{% for contact in contacts %}
+<p class="font-body-md text-body-md text-on-surface-variant">{{ contact.phone }}</p>
+{% endfor %}
 </div>
 </div>
 <div class="flex items-start gap-6 group">
@@ -211,7 +215,9 @@
 </div>
 <div>
 <h3 class="font-label-bold text-label-bold text-primary uppercase mb-1">Communication</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">projects@shreeshakti.com<br>info@shreeshakti.com</p>
+{% for contact in contacts %}
+<p class="font-body-md text-body-md text-on-surface-variant">{{ contact.email }}</p>
+{% endfor %}
 </div>
 </div>
 </div>
@@ -290,7 +296,9 @@
 <div class="md:col-span-1">
 <h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Contact Info</h5>
 <p class="text-on-tertiary-fixed-variant mb-2">Corporate Office:</p>
-<p class="text-on-tertiary mb-6">402 Engineer Heights, Tech District, City Hub - 102</p>
+{% for contact in contacts %}
+<p class="text-on-tertiary mb-6">{{ contact.location }}</p>
+{% endfor %}
 <button class="w-full bg-secondary text-on-secondary font-label-bold text-label-bold py-3 uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-all">
                     Work With Us
                 </button>
