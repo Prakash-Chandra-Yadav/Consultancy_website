@@ -17,3 +17,7 @@ def aboutView(request):
 
 def homeview(request):
     return render(request, "home.html")
+
+
+def projectview(request):
+    return render(request, "projects.html")

@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+
+{% block title %}Projects | SHREESHAKTI Civil Engineering Consultancy{% endblock %}
+
+{% block extra_head %}
+<style>
+    .structural-card {
+        border: 1px solid #000;
+        box-shadow: 4px 4px 0px 0px #000;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .structural-card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0px 0px #fdd400;
+    }
+    .text-stroke {
+        -webkit-text-stroke: 1px black;
+        color: transparent;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Scroll Progress Bar -->
+<div class="fixed top-0 left-0 h-1 bg-secondary-container z-[60] transition-all duration-300" id="scroll-progress" style="width: 0%"></div>
+
+<main class="flex-grow max-w-container-max mx-auto w-full px-margin-desktop py-20">
+    <!-- Page Header -->
+    <div class="mb-20 border-l-8 border-secondary-container pl-8">
+        <h1 class="font-display-lg text-display-lg uppercase mb-4 leading-none">Our Projects</h1>
+        <p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+            Engineering excellence through structural integrity. A portfolio of critical infrastructure, commercial complexes, and urban planning initiatives.
+        </p>
+    </div>
+
+    <!-- Projects Filter/Utility Bar -->
+    <div class="mb-12 flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant pb-6">
+        <div class="flex gap-4">
+            <span class="bg-secondary-container text-on-secondary-container px-3 py-1 font-label-bold text-label-bold border border-primary">ALL PROJECTS</span>
+            <span class="bg-white text-primary px-3 py-1 font-label-bold text-label-bold border border-primary hover:bg-surface-container transition-colors cursor-pointer">INFRASTRUCTURE</span>
+            <span class="bg-white text-primary px-3 py-1 font-label-bold text-label-bold border border-primary hover:bg-surface-container transition-colors cursor-pointer">COMMERCIAL</span>
+        </div>
+        <div class="flex items-center gap-2 font-label-bold text-label-bold text-outline">
+            <span class="material-symbols-outlined text-sm">sort</span> SORT BY: RECENT
+        </div>
+    </div>
+
+    <!-- Projects Blog List -->
+    <div class="flex flex-col gap-12">
+        <!-- Project Card 1 -->
+        <article class="structural-card bg-white overflow-hidden group flex flex-col md:flex-row">
+            <div class="md:w-2/5 relative overflow-hidden h-64 md:h-auto border-b md:border-b-0 md:border-r border-primary">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="A wide-angle architectural photograph of a modern, brutalist-inspired bridge structure crossing a wide river at dusk." 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwsEWulsW6ttRo4GjDl366TmnmMl7_L2FKwj-FNl343un6PaA_sZ8rK8Qv8UdhfaftPRPrM4c46Y1EhA1ScU_rBdCQW1CyViSaL4abllsYi0LZ61oxk-Rf_7fNPvnq05BFb4_Ql27uL82oOBNICuu9wg24jaPvTEXubl9FKS9cgC71dwlHXJxyjZ6lVJKYpayVhWMhu51Z2a6oRXm29JpOw6QgeMI7yLhxayVDvQLojzdXuZUYk_gjuA">
+                <div class="absolute top-4 left-4 bg-primary text-white font-label-bold text-label-bold px-3 py-1">INFRASTRUCTURE</div>
+            </div>
+            <div class="md:w-3/5 p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="font-headline-lg text-headline-lg uppercase group-hover:text-secondary transition-colors">Skyline Arterial Interchange</h2>
+                        <span class="font-label-bold text-label-bold text-outline">2024</span>
+                    </div>
+                    <p class="text-on-surface-variant mb-6 font-body-md text-body-md line-clamp-3">
+                        A complex multi-level highway interchange designed to reduce urban congestion by 35%. This project utilized high-performance pre-stressed concrete and seismic damping technology to ensure long-term structural resilience in a high-density urban corridor.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-6 border-t border-surface-variant">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-secondary-container border border-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">engineering</span>
+                        </div>
+                        <div>
+                            <p class="font-label-bold text-label-bold text-primary">Lead: Ar. Vikram Shah</p>
+                            <p class="text-xs text-outline uppercase tracking-widest">Senior Consultant</p>
+                        </div>
+                    </div>
+                    <a class="inline-flex items-center gap-2 font-label-bold text-label-bold uppercase text-primary hover:text-secondary group/link" href="#">
+                        Read More 
+                        <span class="w-8 h-2 bg-secondary-container group-hover/link:w-12 transition-all"></span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="structural-card bg-white overflow-hidden group flex flex-col md:flex-row">
+            <div class="md:w-2/5 relative overflow-hidden h-64 md:h-auto border-b md:border-b-0 md:border-r border-primary">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="An interior shot of a massive sustainable commercial office building with exposed steel structural elements and large glass facades." 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuARQwu_jalzVsd1Kv3eqwX9Q2WH8wSL1eLNaU_kSrHLBOlXj3Y6BtyudwhmVgwCNLEFpzvYpuq71C0LqJvNRJ4EGWwIo9i529PlKT2Ma64yFDh7iIzHP8XAy9JC_NjV49xm7l8yDnr3caGcia2_NQDX8Wrs3cPxG80tq1YBhqoTJPG6GT5geqKy5D6BnbbYRaW1BGyeSrmJ1sbeTp1SQGKn5UxsG7kasAHrV-Lykp6cfQxVAfQSA10LdA">
+                <div class="absolute top-4 left-4 bg-primary text-white font-label-bold text-label-bold px-3 py-1">COMMERCIAL</div>
+            </div>
+            <div class="md:w-3/5 p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="font-headline-lg text-headline-lg uppercase group-hover:text-secondary transition-colors">The Nexus Tech Park</h2>
+                        <span class="font-label-bold text-label-bold text-outline">2023</span>
+                    </div>
+                    <p class="text-on-surface-variant mb-6 font-body-md text-body-md line-clamp-3">
+                        A LEED-certified commercial hub featuring a unique cantilevered wing design. Our team handled the complete structural analysis and load distribution for the 1.2 million sq. ft. facility, integrating smart HVAC systems within the core skeleton.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-6 border-t border-surface-variant">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-secondary-container border border-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">architecture</span>
+                        </div>
+                        <div>
+                            <p class="font-label-bold text-label-bold text-primary">Lead: Er. Ananya Rao</p>
+                            <p class="text-xs text-outline uppercase tracking-widest">Structural Head</p>
+                        </div>
+                    </div>
+                    <a class="inline-flex items-center gap-2 font-label-bold text-label-bold uppercase text-primary hover:text-secondary group/link" href="#">
+                        Read More 
+                        <span class="w-8 h-2 bg-secondary-container group-hover/link:w-12 transition-all"></span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="structural-card bg-white overflow-hidden group flex flex-col md:flex-row">
+            <div class="md:w-2/5 relative overflow-hidden h-64 md:h-auto border-b md:border-b-0 md:border-r border-primary">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                     alt="High-angle drone photograph of a massive industrial water filtration and storage facility." 
+                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzVUff-XIartAYAmJvp_DivQRcET-ISjM1rsZ2rqsKEghKwAXKYhk3abzqyfq6alQyYl1686J4KzoP1YKrztVF40gGKO_k_2pAaHs-0D2OJsT55R5jYVJ7TAQ1tQ8ESNN5v9NkbMPOt2_iR6279v5a9fxvZTcZB_c4vZuSlP0dllF7O3H1kCrhwbjLbLkPvWueRZBe3sJlx_3Tnl1EWlWCjKAOE-V8mSlnTvQLwNGeFjewkWLuxjfAug">
+                <div class="absolute top-4 left-4 bg-primary text-white font-label-bold text-label-bold px-3 py-1">UTILITY</div>
+            </div>
+            <div class="md:w-3/5 p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-4">
+                        <h2 class="font-headline-lg text-headline-lg uppercase group-hover:text-secondary transition-colors">Vishwa Reservoir System</h2>
+                        <span class="font-label-bold text-label-bold text-outline">2022</span>
+                    </div>
+                    <p class="text-on-surface-variant mb-6 font-body-md text-body-md line-clamp-3">
+                        Critical water management infrastructure serving over 500,000 residents. The project involved subterranean reinforcement and specialized waterproof concrete casting to handle extreme hydraulic pressure across a 50-acre footprint.
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-6 border-t border-surface-variant">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-secondary-container border border-primary flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary">water_drop</span>
+                        </div>
+                        <div>
+                            <p class="font-label-bold text-label-bold text-primary">Lead: Er. Sameer Kulkarni</p>
+                            <p class="text-xs text-outline uppercase tracking-widest">Hydraulic Engineer</p>
+                        </div>
+                    </div>
+                    <a class="inline-flex items-center gap-2 font-label-bold text-label-bold uppercase text-primary hover:text-secondary group/link" href="#">
+                        Read More 
+                        <span class="w-8 h-2 bg-secondary-container group-hover/link:w-12 transition-all"></span>
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <!-- Pagination -->
+    <div class="mt-20 flex justify-center items-center gap-4">
+        <button class="w-12 h-12 flex items-center justify-center border border-primary hover:bg-primary hover:text-white transition-colors">
+            <span class="material-symbols-outlined">chevron_left</span>
+        </button>
+        <div class="flex gap-2">
+            <span class="w-12 h-12 flex items-center justify-center bg-primary text-white font-label-bold text-label-bold">01</span>
+            <span class="w-12 h-12 flex items-center justify-center border border-primary hover:bg-surface-container-low transition-colors font-label-bold text-label-bold cursor-pointer">02</span>
+            <span class="w-12 h-12 flex items-center justify-center border border-primary hover:bg-surface-container-low transition-colors font-label-bold text-label-bold cursor-pointer">03</span>
+        </div>
+        <button class="w-12 h-12 flex items-center justify-center border border-primary hover:bg-primary hover:text-white transition-colors">
+            <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+    </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Micro-interaction for scroll progress
+    window.addEventListener('scroll', () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        const progressBar = document.getElementById('scroll-progress');
+        if (progressBar) {
+            progressBar.style.width = scrolled + '%';
+        }
+    });
+
+    // Simple Fade-in for cards on load
+    document.querySelectorAll('.structural-card').forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            card.style.transition = 'all 0.6s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 100 * index);
+    });
+</script>
+{% endblock %}
