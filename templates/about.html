@@ -1,136 +1,6 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>About Us | SHREESHAKTI Civil Engineering Consultancy</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "tertiary-fixed-dim": "#c6c6c7",
-                        "inverse-surface": "#303031",
-                        "tertiary": "#000000",
-                        "on-secondary-fixed-variant": "#544600",
-                        "surface-dim": "#dbdad9",
-                        "secondary-container": "#fdd400",
-                        "surface-variant": "#e4e2e2",
-                        "on-surface-variant": "#4c4546",
-                        "on-tertiary": "#ffffff",
-                        "on-secondary-fixed": "#221b00",
-                        "secondary-fixed-dim": "#e9c400",
-                        "surface-container-high": "#e9e8e7",
-                        "on-secondary-container": "#6f5c00",
-                        "surface-container-low": "#f5f3f3",
-                        "background": "#fbf9f8",
-                        "surface-tint": "#5e5e5e",
-                        "on-primary-fixed-variant": "#474747",
-                        "on-error": "#ffffff",
-                        "surface-container-lowest": "#ffffff",
-                        "secondary-fixed": "#ffe170",
-                        "surface-container": "#efeded",
-                        "tertiary-container": "#1a1c1c",
-                        "error": "#ba1a1a",
-                        "surface-bright": "#fbf9f8",
-                        "on-primary-fixed": "#1b1b1b",
-                        "primary-container": "#1b1b1b",
-                        "on-background": "#1b1c1c",
-                        "primary": "#000000",
-                        "on-error-container": "#93000a",
-                        "inverse-primary": "#c6c6c6",
-                        "surface-container-highest": "#e4e2e2",
-                        "on-surface": "#1b1c1c",
-                        "primary-fixed": "#e2e2e2",
-                        "on-tertiary-fixed": "#1a1c1c",
-                        "on-primary-container": "#848484",
-                        "tertiary-fixed": "#e2e2e2",
-                        "on-tertiary-fixed-variant": "#454747",
-                        "on-primary": "#ffffff",
-                        "outline": "#7e7576",
-                        "inverse-on-surface": "#f2f0f0",
-                        "secondary": "#705d00",
-                        "outline-variant": "#cfc4c5",
-                        "on-tertiary-container": "#838484",
-                        "surface": "#fbf9f8",
-                        "error-container": "#ffdad6",
-                        "primary-fixed-dim": "#c6c6c6",
-                        "on-secondary": "#ffffff"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0px",
-                        "lg": "0px",
-                        "xl": "0px",
-                        "full": "9999px"
-                    },
-                    "spacing": {
-                        "container-max": "1280px",
-                        "margin-desktop": "64px",
-                        "margin-mobile": "20px",
-                        "gutter": "24px",
-                        "unit": "8px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Montserrat"],
-                        "body-lg": ["Inter"],
-                        "headline-xl": ["Montserrat"],
-                        "headline-lg": ["Montserrat"],
-                        "label-md": ["Inter"],
-                        "body-md": ["Inter"],
-                        "headline-md": ["Montserrat"],
-                        "label-bold": ["Inter"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800"}],
-                        "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
-                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
-                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
-                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                        "label-bold": ["14px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}]
-                    }
-                }
-            }
-        }
-    </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .structural-grid {
-            background-image: radial-gradient(circle, #cfc4c5 1px, transparent 1px);
-            background-size: 32px 32px;
-        }
-        .hard-shadow {
-            box-shadow: 4px 4px 0px 0px #000000;
-        }
-        .hard-shadow-yellow {
-            box-shadow: 4px 4px 0px 0px #fdd400;
-        }
-    </style>
-</head>
-<body class="bg-background text-on-background font-body-md selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopAppBar -->
-<header class="bg-background w-full top-0 sticky z-50 border-b-2 border-primary">
-<nav class="flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="font-headline-md text-headline-md font-bold tracking-tighter text-primary">
-                SHREESHAKTI
-            </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-label-bold text-label-bold text-secondary border-b-2 border-secondary pb-1 transition-colors duration-200" href="#">Home</a>
-<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">About</a>
-<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Projects</a>
-<a class="font-label-bold text-label-bold text-on-background hover:text-secondary transition-colors duration-200" href="#">Contact</a>
-</div>
-<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-6 py-3 border-2 border-primary hover:bg-primary hover:text-on-primary transition-all duration-200 uppercase structural-layer">
-                Get a Quote
-            </button>
-</nav>
-</header>
-<main class="pt-24 overflow-x-hidden">
+{% extends 'base.html' %}
+{% block title %}About Us | SHREESHAKTI Civil Engineering Consultancy{% endblock %}
+{% block content %}
 <!-- Hero Section -->
 <section class="relative bg-primary py-24 md:py-32 overflow-hidden transition-all duration-1000 opacity-100">
 <div class="absolute inset-0 opacity-20 structural-grid"></div>
@@ -251,6 +121,7 @@
 <p class="text-on-surface-variant font-label-bold uppercase">{{ employee.position|title }}</p>
 </div>
 {% endfor %}
+
 </div>
 </div>
 </section>
@@ -268,58 +139,8 @@
 </div>
 </div>
 </section>
-</main>
-<!-- Footer -->
-<footer class="bg-tertiary-container w-full border-t-4 border-secondary">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-20 max-w-container-max mx-auto">
-<!-- Brand & Info -->
-<div class="md:col-span-1">
-<div class="font-headline-md text-headline-md text-on-tertiary font-bold mb-6">SHREESHAKTI</div>
-<p class="text-on-tertiary-fixed-variant mb-6">Elite civil engineering solutions for modern infrastructure. Precision, safety, and innovation integrated into every project.</p>
-<div class="flex gap-4">
-<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
-<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
-<a class="text-on-tertiary hover:text-secondary-fixed transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
-</div>
-</div>
-<!-- Quick Links -->
-<div class="md:col-span-1">
-<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Navigation</h5>
-<ul class="space-y-4">
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Home</a></li>
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Services</a></li>
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Sustainability</a></li>
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Careers</a></li>
-</ul>
-</div>
-<!-- Legal -->
-<div class="md:col-span-1">
-<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Resources</h5>
-<ul class="space-y-4">
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Privacy Policy</a></li>
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Terms of Service</a></li>
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Documentation</a></li>
-<li class=""><a class="text-on-tertiary-fixed-variant hover:text-secondary-fixed-dim transition-all" href="#">Project Portal</a></li>
-</ul>
-</div>
-<!-- Contact/Newsletter -->
-<div class="md:col-span-1">
-<h5 class="text-on-tertiary font-label-bold text-label-bold uppercase mb-8">Contact Info</h5>
-<p class="text-on-tertiary-fixed-variant mb-2">Corporate Office:</p>
-<p class="text-on-tertiary mb-6">402 Engineer Heights, Tech District, City Hub - 102</p>
-<button class="w-full bg-secondary text-on-secondary font-label-bold text-label-bold py-3 uppercase hover:bg-secondary-container hover:text-on-secondary-container transition-all">
-                    Work With Us
-                </button>
-</div>
-</div>
-<div class="border-t border-on-tertiary-fixed-variant/20 py-8 px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-<span class="text-on-tertiary-fixed-variant text-sm font-body-md">© 2024 Shreeshakti Civil Engineering Consultancy. All rights reserved.</span>
-<div class="flex gap-8">
-<span class="text-on-tertiary-fixed-variant text-xs uppercase tracking-tighter">Precision Built</span>
-<span class="text-on-tertiary-fixed-variant text-xs uppercase tracking-tighter">ISO 9001 Certified</span>
-</div>
-</div>
-</footer>
+{% endblock %}
+{% block extra_js %}
 <script>
         // Micro-interactions for hard shadows
         document.querySelectorAll('.hard-shadow').forEach(card => {
@@ -352,6 +173,4 @@
             observer.observe(section);
         });
     </script>
-
-
-</body></html>
+    {% endblock %}

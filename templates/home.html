@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+
+{% block title %}SHREESHAKTI | Civil Engineering Consultancy{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="w-full h-full bg-cover bg-center" 
+             data-alt="A wide-angle, high-contrast photograph of a massive modern bridge construction site during the golden hour." 
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCbh3WfAF5mfQCJJb6GxmRiRKK27cvqNq3tiYmV5FdhSVhDyXwt8DnG6GlVWwKtBYwZ4Lg2rmTcd5rrSVixN5pYbxLt0NN0e9s1ARCZ4-m0n4JwkzcDuvnEZJl5-tsRvFIJuxOTmzvg7kUpaHEgFYXa7BMR2Yf1Oy3cPWjhIxOw4sR0acvSSJ4QJSV1b7y8JI_p1QGdGTVqmcCw4cBMUy0_tIkrezueFTCS7-SkE7MpVHAVUiJREjgLjA')">
+        </div>
+        <div class="absolute inset-0 bg-primary/40 backdrop-blur-[2px]"></div>
+    </div>
+    <div class="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full">
+        <div class="max-w-3xl bg-background/95 p-12 border-2 border-primary structural-layer">
+            <div class="w-16 h-2 bg-secondary-container mb-6"></div>
+            <h1 class="font-display-lg text-display-lg mb-6 leading-tight uppercase tracking-tight">
+                Building the Future with <span class="text-secondary">Precision</span>
+            </h1>
+            <p class="font-body-lg text-body-lg mb-8 text-on-surface-variant max-w-xl">
+                Shreeshakti Civil Engineering Consultancy provides high-end structural design, rigorous project management, and precision surveying for urban infrastructure and private developments.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-8 py-4 border-2 border-primary uppercase structural-layer hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all">
+                    Get a Quote
+                </button>
+                <button class="bg-transparent text-primary font-label-bold text-label-bold px-8 py-4 border-2 border-primary uppercase hover:bg-primary hover:text-on-primary transition-all">
+                    View Projects
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-24 px-margin-desktop max-w-container-max mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+        <div class="max-w-2xl">
+            <span class="font-label-bold text-label-bold text-secondary uppercase tracking-widest block mb-4">Core Competencies</span>
+            <h2 class="font-headline-xl text-headline-xl uppercase">Our Services</h2>
+        </div>
+        <div class="h-1 bg-primary flex-grow mx-8 hidden md:block"></div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <!-- Structural Design -->
+        <div class="bg-white border-2 border-primary p-8 hover:bg-surface-container-low transition-colors group">
+            <div class="mb-8 flex justify-between items-start">
+                <span class="material-symbols-outlined text-5xl text-secondary" style="font-variation-settings: 'FILL' 1;">architecture</span>
+                <span class="font-display-lg text-headline-md text-outline-variant opacity-30">01</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-4 uppercase">Structural Design</h3>
+            <p class="text-on-surface-variant mb-6">Innovative engineering solutions for complex skeletons. We ensure stability, durability, and cost-efficiency in every blueprint.</p>
+            <div class="w-full h-2 bg-surface-variant relative overflow-hidden">
+                <div class="absolute inset-0 bg-secondary-container w-3/4"></div>
+                <div class="absolute inset-0 diagonal-hatch opacity-20"></div>
+            </div>
+        </div>
+        <!-- Project Management -->
+        <div class="bg-white border-2 border-primary p-8 hover:bg-surface-container-low transition-colors group">
+            <div class="mb-8 flex justify-between items-start">
+                <span class="material-symbols-outlined text-5xl text-secondary" style="font-variation-settings: 'FILL' 1;">account_tree</span>
+                <span class="font-display-lg text-headline-md text-outline-variant opacity-30">02</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-4 uppercase">Project Management</h3>
+            <p class="text-on-surface-variant mb-6">From site inspection to final delivery, we coordinate all resources to keep your infrastructure project on schedule and budget.</p>
+            <div class="w-full h-2 bg-surface-variant relative overflow-hidden">
+                <div class="absolute inset-0 bg-secondary-container w-1/2"></div>
+                <div class="absolute inset-0 diagonal-hatch opacity-20"></div>
+            </div>
+        </div>
+        <!-- Surveying -->
+        <div class="bg-white border-2 border-primary p-8 hover:bg-surface-container-low transition-colors group">
+            <div class="mb-8 flex justify-between items-start">
+                <span class="material-symbols-outlined text-5xl text-secondary" style="font-variation-settings: 'FILL' 1;">straighten</span>
+                <span class="font-display-lg text-headline-md text-outline-variant opacity-30">03</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-4 uppercase">Precision Surveying</h3>
+            <p class="text-on-surface-variant mb-6">Utilizing advanced geospatial technology to provide accurate land measurements and data analysis for critical planning.</p>
+            <div class="w-full h-2 bg-surface-variant relative overflow-hidden">
+                <div class="absolute inset-0 bg-secondary-container w-full"></div>
+                <div class="absolute inset-0 diagonal-hatch opacity-20"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Projects -->
+<section class="bg-surface-container-lowest py-24 border-t-2 border-primary">
+    <div class="px-margin-desktop max-w-container-max mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between mb-16">
+            <h2 class="font-headline-xl text-headline-xl uppercase mb-4 md:mb-0">Latest Projects</h2>
+            <a class="font-label-bold text-label-bold uppercase border-b-2 border-primary pb-1 flex items-center gap-2 hover:text-secondary hover:border-secondary transition-all" href="#">
+                View All Portfolio <span class="material-symbols-outlined">arrow_right_alt</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+            <!-- Project 1 - Main Feature -->
+            <div class="md:col-span-8 group relative overflow-hidden border-2 border-primary structural-layer h-[500px]">
+                <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+                     data-alt="A photograph of a completed modern commercial skyscraper with a unique geometric glass facade." 
+                     style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPDjb02lkRuIaJ17E3W8S9dz_hGR93Qh7dmaRi7uTi5EeUvt40mzUC80bdBdSdhkG3k5cr0ivSqFocK9bo4j2V4U3zfvWenYfqqPA9bKPMaD6alTz3_26-RKBdKF5YQCu6Al8WwjaVAkXNcLmpHRH6pxRCxhq1QshwWaGLELh6dA2tSzjrX03Shq4R83xY5YaBx0KtsCm9CwKdJXFWB4nNwfJljlzSlNo4jJDaUNkXKxzf56o_5G-62g')">
+                </div>
+                <div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent">
+                    <span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-xs font-bold uppercase mb-4 inline-block">Structural Engineering</span>
+                    <h4 class="font-headline-lg text-headline-lg text-white uppercase">The Nexus Corporate Plaza</h4>
+                </div>
+            </div>
+            <!-- Project 2 - Sidebar -->
+            <div class="md:col-span-4 flex flex-col gap-gutter">
+                <div class="group relative overflow-hidden border-2 border-primary h-[238px]">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+                         data-alt="An aerial view of a sophisticated highway interchange project." 
+                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuApAB2he9_PnXFbg4dJVNRH-9XAfn6yG4Q2H47RXmYv9ZIuiex2nQ8XexZTMf_L_1pPCTd4lx-CjtmY3Vocl8xjLrZJO4DS7P7oaNqiRBkEejjkfu5jYAgTBgyEc9avArT8IWTKyZCcGqywekTtg4z_rSSssT_EZ1uz08071cxw9Hps0ivVw2B3hVS7rHyv2r7wsMvUi8q635aR1NwOb69zHNPN_re5JX6CfxA1Kgm2rxq6h5-w-nHDJw')">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-label-bold text-label-bold uppercase tracking-widest">Skyway Interchange</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden border-2 border-primary h-[238px]">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" 
+                         data-alt="A close-up of a modern industrial facility featuring exposed steel beams." 
+                         style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7ELOpgY9CWmzRy2DYo2zG-b4dHpfu3pE8fn9oKdcvWfIatjEglwmqAcl9FT0nKe8cs-BNIr9ttWpMeXRIkegyD-9blM11PQbVx7Ih7caDKjg1nZIGSZ21lBH4l5dWr349rMWIErsJ6nma3AcBETKLvaybRoMD0y_508uVDSAsRI-gQMxGcSkoWORHJdUed20MZeuT7rVB3wujThm2iycYSSO-iQ8eJEJUTX9frm3AO5no9dCgfeYUSw')">
+                    </div>
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-label-bold text-label-bold uppercase tracking-widest">Industrial Hub Phase II</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="py-20 bg-primary text-on-primary">
+    <div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+        <div class="p-4">
+            <span class="block font-display-lg text-display-lg text-secondary-container mb-2">250+</span>
+            <span class="font-label-bold text-label-bold uppercase tracking-widest text-on-primary-container">Projects Delivered</span>
+        </div>
+        <div class="p-4 border-l border-on-primary-container/20">
+            <span class="block font-display-lg text-display-lg text-secondary-container mb-2">15</span>
+            <span class="font-label-bold text-label-bold uppercase tracking-widest text-on-primary-container">States Covered</span>
+        </div>
+        <div class="p-4 border-l border-on-primary-container/20">
+            <span class="block font-display-lg text-display-lg text-secondary-container mb-2">40+</span>
+            <span class="font-label-bold text-label-bold uppercase tracking-widest text-on-primary-container">Expert Engineers</span>
+        </div>
+        <div class="p-4 border-l border-on-primary-container/20">
+            <span class="block font-display-lg text-display-lg text-secondary-container mb-2">12</span>
+            <span class="font-label-bold text-label-bold uppercase tracking-widest text-on-primary-container">Years Excellence</span>
+        </div>
+    </div>
+</section>
+{% endblock %}

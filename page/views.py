@@ -13,3 +13,7 @@ def contactview(request):
 def aboutView(request):
     professionals = Professionals.objects.all()
     return render(request, "about.html", {"professionals": professionals})
+
+
+def homeview(request):
+    return render(request, "home.html")
