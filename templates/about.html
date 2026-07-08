@@ -251,54 +251,6 @@
 <p class="text-on-surface-variant font-label-bold uppercase">{{ employee.position|title }}</p>
 </div>
 {% endfor %}
-
-<!---test code-->
-<!-- Persons-->
-{% for employee in professionals %}
-<div class="group">
-<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
-<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional headshot of a senior male civil engineer in his 50s, wearing a crisp white shirt and a yellow hard hat. He is standing against a blurred background of a construction site with cranes and scaffolding. The portrait is sharp and authoritative, emphasizing years of industry leadership and technical expertise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9o53OkppBbH6AMH7YgMMYBrvOUkTZPrF5wlqY3AX8g5ELTtsZEXPYRtP-BpyjYrB1M1Djz41gdK2qhV0OHmCE4fxh50kv0JMxCaSovb75XPZuVkpfUedUOUnRyINO-m3PgnH9zfcTC7-WyWJ2p0CWGxTUOWdia3xoIGtu1WrKl6WWwldwCV9N6MYEGcgfHjbP9cuubcxlSIOp13cdM5CSL96Ufb3uTvmZvaz201-eS-SEZzEIvtiqjg')"></div>
-<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
-<p class="text-label-md">25 Years Experience</p>
-</div>
-</div>
-<h4 class="font-headline-md text-headline-md">{{ employee.name|title }}</h4>
-<p class="text-on-surface-variant font-label-bold uppercase">{{ employee.position|title }}</p>
-</div>
-{% endfor %}
-<!-- Person 2 -->
-<div class="group">
-<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
-<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a confident female structural engineer in her late 30s, looking professional in a black blazer. She is holding a digital tablet with engineering software visible. The background is a modern architectural office with large windows and industrial decor. The aesthetic is clean, high-contrast, and focused on modern engineering innovation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBW4HUcjHPjvZ2q6D1ci_HIdDH76VeJ0tnqQbIW72fCM02h_7NFyb5JxopFH7kAQIp7MSOQ2alVLtief7Gmncw9RN7nzi3EUwS7uJ5Ch7Bk3t2u7hZ1AMHliE36Vo4kfbTw8SnYFZGJO7doKv9NepQ2ZsWLRrz7PRCQQ-NCMGdI0IROsCHgQIHScvyvO0GuAEEfh-R9o5upmFFXTRpLerNcwW56bzk-t8Z598ZklCrZm4acdIYJJcDOsg')"></div>
-<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
-<p class="text-label-md">M.Tech Structural Engineering</p>
-</div>
-</div>
-<h4 class="font-headline-md text-headline-md">Ananya Reddy</h4>
-<p class="text-on-surface-variant font-label-bold uppercase">Head of Design</p>
-</div>
-<!-- Person 3 -->
-<div class="group">
-<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
-<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A sharp, professional headshot of a male project manager in his early 40s. He is wearing a high-visibility vest over a casual shirt and is smiling confidently. The background shows a large-scale infrastructure project with steel frameworks under a bright, high-key sun. The style is industrial, clean, and highly professional." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAw1bRTuM4rkedKSnelyK7mp4r3nrHuffl8vpqWqAPiMf4PItjF_BXSOLuVctbGZmiTaR7wjNOBME9_a1ZYwmey5rDmomKx7l7inKAqBUdSNOI_RXZQEg9a62c1MlVBC_ACNF0IWroiW4Tr7KG8-QL1vzpBeyga37IeOalTJ26ivZl5l-XCuArGCOQIgxINaA0SccKmGqyH1CCO_oCsdCYf0aKHrETRvf-GyDdgf_fpyPv8G9-HaXOUqw')"></div>
-<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
-<p class="text-label-md">Project Management Lead</p>
-</div>
-</div>
-<h4 class="font-headline-md text-headline-md">Sanjay Mehta</h4>
-<p class="text-on-surface-variant font-label-bold uppercase">Operations Director</p>
-</div>
-<!-- Person 4 -->
-<div class="group">
-<div class="relative overflow-hidden bg-surface-container mb-6 border border-primary">
-<div class="aspect-[3/4] bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A portrait of a young, enthusiastic male junior civil engineer in his late 20s, standing in a brightly lit engineering lab with structural testing equipment. He is looking into the camera with a friendly but professional demeanor. The image highlights the consultancy's investment in emerging talent and technological advancement." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5-TYoyNAyEsnrI7W9ge57rspxXItZ4AvmxCogT7vLi09bZ5FeXWaE3QN6LdIqjhCNrHXM92zJOZjDslrGJ6UnESYC26EbrUI7r9GGZWYPf3N7DtK2wwyjCUe1IAjSE0Q3G391zeUPYzVfbg_bByMrYU3pq5itPbAqEuoXl1wV1fDEvrucVcKpr5TvWd_2z_YWnvyxZjuXF7D6LX8DK41ZRxEVOIs9JH3c4qVtqnjodwIW7s2ty2iU3Q')"></div>
-<div class="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform bg-primary text-on-primary">
-<p class="text-label-md">Sustainable Design Expert</p>
-</div>
-</div>
-<h4 class="font-headline-md text-headline-md">Rahul Kapoor</h4>
-<p class="text-on-surface-variant font-label-bold uppercase">Senior Associate</p>
-</div>
 </div>
 </div>
 </section>
