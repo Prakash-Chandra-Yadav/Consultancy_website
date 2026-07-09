@@ -21,4 +21,5 @@ def homeview(request):
 
 
 def projectview(request):
-    return render(request, "projects.html")
+    post = Post.objects.all()
+    return render(request, "projects.html", {"post": post})
