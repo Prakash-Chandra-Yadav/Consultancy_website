@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Contact, Professionals, Post
+from django.views.generic import ListView
 
 
 # Create your views here.
