@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+
+{% block title %}Project Details | SHREESHAKTI{% endblock %}
+
+{% block extra_head %}
+<style>
+    /* Page-specific structural layer effect */
+    .structural-layer {
+        position: relative;
+        z-index: 1;
+    }
+    .structural-layer::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        right: -4px;
+        bottom: -4px;
+        background-color: #000000;
+        z-index: -1;
+    }
+    /* Page-specific hatch pattern */
+    .hatch-pattern {
+        background-image: repeating-linear-gradient(45deg, #efeded 0, #efeded 2px, transparent 0, transparent 50%);
+        background-size: 10px 10px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<!-- Project Hero Section -->
+<section class="relative w-full overflow-hidden animate-section">
+    <div class="w-full h-[60vh] md:h-[70vh] bg-neutral-900 overflow-hidden relative">
+        <img class="w-full h-full object-cover opacity-80" 
+        alt="{{ project.title }}" 
+        src="{% if post.image %}{{ post.image.url }}{% else %}/static/images/default-project.jpg{% endif %}">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+        
+        <div class="absolute bottom-0 left-0 w-full px-margin-desktop py-12 max-w-container-max mx-auto">
+            <div class="max-w-4xl">
+                <div class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 font-label-bold text-label-bold uppercase tracking-widest mb-6">
+                    our Pride Projects
+                </div>
+                <h1 class="font-display-lg text-display-lg text-white mb-6 uppercase tracking-tight">{{ post.title }}</h1>
+                
+                <div class="flex flex-wrap gap-8 text-white/80 font-label-bold text-label-bold">
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary-container">person</span>
+                        <span>Author: {{ post.author|title }}</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>Article Published: {{ post.date }}</span>
+                        <span>Project Completed: Oct 2023</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-secondary-container">location_on</span>
+                        <span>Mumbai, MH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content -->
+<section class="px-margin-desktop py-20 max-w-container-max mx-auto animate-section">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+        <!-- Project Brief Sidebar -->
+        <aside class="md:col-span-4 order-2 md:order-1">
+            <div class="sticky top-28 space-y-8">
+                <!-- Stats Card -->
+                <div class="bg-white border-2 border-primary p-8 structural-layer">
+                    <h3 class="font-headline-md text-headline-md uppercase mb-6 border-b-2 border-primary pb-2">Project Metrics</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="font-label-bold text-label-bold text-outline uppercase mb-1">Budget Allocation</p>
+                            <p class="font-headline-md text-headline-md text-primary">$42.5 Million</p>
+                        </div>
+                        <div>
+                            <p class="font-label-bold text-label-bold text-outline uppercase mb-1">Execution Period</p>
+                            <p class="font-headline-md text-headline-md text-primary">18 Months</p>
+                        </div>
+                        <div>
+                            <p class="font-label-bold text-label-bold text-outline uppercase mb-1">Safety Rating</p>
+                            <div class="flex items-center gap-2">
+                                <div class="flex-1 h-3 bg-surface-container-highest overflow-hidden">
+                                    <div class="h-full bg-secondary-container w-[98%]"></div>
+                                </div>
+                                <span class="font-label-bold text-label-bold">98%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Context -->
+                <div class="bg-surface-container p-8 border-l-4 border-secondary-container">
+                    <h4 class="font-label-bold text-label-bold uppercase mb-4 tracking-tighter">Our Strength</h4>
+                    <ul class="space-y-3 font-body-md text-body-md">
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                            <span>High-Performance Fiber-Reinforced Concrete</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                            <span>BIM-Driven Structural Analysis</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                            <span>Expert engineers with decade of experiences</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Case Study Body -->
+        <article class="md:col-span-8 order-1 md:order-2 space-y-16">
+            <!-- Description -->
+            <section class="animate-section">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="h-1 w-12 bg-primary"></span>
+                    <h2 class="font-headline-xl text-headline-xl uppercase">Discription</h2>
+                </div>
+                <div class="prose prose-lg max-w-none text-on-surface-variant font-body-lg">
+                    <p class="mb-6">{{ post.body }}</p>
+                </div>
+                <div class="mt-10 border-2 border-primary p-2">
+                    <img class="w-full grayscale brightness-90 contrast-125" 
+                         alt="A detailed technical blueprint showing complex structural joints and foundation piling of a bridge." 
+                         src="{{ post.image.url }}">
+                    <p class="mt-4 font-label-bold text-label-bold text-center uppercase tracking-widest text-outline">FIG 1.1: {{ post.title }}</p>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section class="animate-section">
+                <div class="flex items-center gap-4 mb-6">
+                    <span class="h-1 w-12 bg-primary"></span>
+                    <h2 class="font-headline-xl text-headline-xl uppercase">Results</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+                    <div class="border-2 border-primary p-6 hatch-pattern">
+                        <h4 class="font-display-lg text-headline-xl text-primary mb-2">35%</h4>
+                        <p class="font-label-bold text-label-bold uppercase">Effectiveness</p>
+                    </div>
+                    <div class="border-2 border-primary p-6 bg-secondary-container">
+                        <h4 class="font-display-lg text-headline-xl text-on-secondary-container mb-2">Zero</h4>
+                        <p class="font-label-bold text-label-bold uppercase text-on-secondary-container">LTI (Lost Time Injuries)</p>
+                    </div>
+                </div>
+                <div class="prose prose-lg max-w-none text-on-surface-variant font-body-lg">
+                    <p>Today, the Skybound Overpass stands as a landmark of modern engineering in the region. It has not only alleviated the traffic crisis but has also set a new standard for sustainable urban development projects nationwide. The success of this case study led to Shreeshakti being awarded the National Infrastructure Excellence Award 2024.</p>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="bg-primary p-12 text-center animate-section">
+                <h3 class="font-headline-lg text-headline-lg text-white uppercase mb-6">Ready to build the future?</h3>
+                <p class="text-white/60 mb-10 max-w-lg mx-auto font-body-md">Our team of expert civil engineers and project managers are ready to bring your most ambitious visions to life with technical rigor and innovative solutions.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                   <a href="{% url 'contact' %}"><button class="bg-secondary-container text-on-secondary-container px-10 py-4 font-label-bold text-label-bold uppercase tracking-widest hover:brightness-110 transition-all">
+                        Request Consultation
+                    </button>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </div>
+</section>
+
+<!-- Recommended Projects -->
+<section class="bg-surface-container-low py-20 px-margin-desktop animate-section">
+    <div class="max-w-container-max mx-auto">
+        <div class="flex justify-between items-end mb-12">
+            <a class="hidden md:flex items-center gap-2 font-label-bold text-label-bold uppercase border-b-2 border-primary pb-1 group" href="{% url 'projects' %}">
+                View All Projects
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+        
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Scroll reveal animation for project detail sections
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-section').forEach(section => {
+        section.style.opacity = "0";
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "all 0.6s ease-out";
+        observer.observe(section);
+    });
+</script>
+{% endblock %}

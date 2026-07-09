@@ -8,10 +8,14 @@ import datetime
 class Post(models.Model):
     title = models.CharField(max_length=200)
     body = models.TextField()
-    author = models.CharField(max_length=50)
+    author = models.ForeignKey(
+        "auth.user",
+        on_delete=models.CASCADE,
+    )
+    name = models.CharField(max_length=50, default="N/A")
     position = models.CharField(max_length=50, default="Employee")
     date = models.DateField(null=True, blank=True)
-    image = models.ImageField(upload_to="projects/")
+    image = models.ImageField(upload_to="projects/", null=True)
 
     def __str__(self):
         return self.title

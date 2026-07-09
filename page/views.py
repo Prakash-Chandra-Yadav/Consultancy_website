@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Contact, Professionals, Post
 from django.views.generic import ListView
 
@@ -21,5 +21,10 @@ def homeview(request):
 
 
 def projectview(request):
-    post = Post.objects.all()
-    return render(request, "projects.html", {"post": post})
+    posts = Post.objects.all()
+    return render(request, "projects.html", {"posts": posts})
+
+
+def project_details(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, "project_details.html", {"post": post})
