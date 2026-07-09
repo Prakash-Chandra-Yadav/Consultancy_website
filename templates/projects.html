@@ -53,7 +53,7 @@
                         <span class="font-label-bold text-label-bold text-outline">{{ article.date }}</span>
                     </div>
                     <p class="text-on-surface-variant mb-6 font-body-md text-body-md line-clamp-3">
-                       {{ article.body }}
+                       {{ article.body|truncatewords:30 }}
                     </p>
                 </div>
                 <div class="flex items-center justify-between pt-6 border-t border-surface-variant">
